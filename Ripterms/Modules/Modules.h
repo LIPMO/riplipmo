@@ -210,7 +210,7 @@ namespace Ripterms
 		class Xray : public IModule
 		{
 		public:
-			//Xray() { this->keyBind = 0x58; };
+			Xray() { this->keyBind = 0x58; };
 			void renderGUI() override;
 			void render() override;
 			void disable() override;
@@ -231,12 +231,17 @@ namespace Ripterms
 			int RADIUS = 20;
 			bool coal = false;
 			bool redstone = false;
-			bool diamond = true;
+			bool diamond = false;
 			bool gold = true;
-			bool iron = true;
-			bool emerald = true;
-			bool lapis = true;
-			bool other = true;
+			bool iron = false;
+			bool emerald = false;
+			bool lapis = false;
+			bool paladium = true;
+			bool titane = true;
+			bool findium = true;
+			bool amethyst = true;
+			bool trixium = true;
+			bool other = false;
 
 			std::vector<RenderData> renderDatas{};
 			std::mutex renderData_mutex{};
