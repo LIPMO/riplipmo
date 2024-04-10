@@ -1,6 +1,7 @@
 ﻿# RiptermsGhost - paladium
 
 ### BASED ON: https://github.com/Lefraudeur/RiptermsGhost/tree/master
+## Thanks to lefraudeur for the base
 
 ### Included Example Features :
 - AimAssist
