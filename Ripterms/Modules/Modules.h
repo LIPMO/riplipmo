@@ -88,7 +88,10 @@ namespace Ripterms
 		public:
 			void run() override;
 			void renderGUI() override;
+			void LC();
 		private:
+			bool hold_mb = true;
+			bool in_gui = false;
 			int min_cps = 7;
 			int max_cps = 14;
 		};
