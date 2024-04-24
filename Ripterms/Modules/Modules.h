@@ -147,6 +147,22 @@ namespace Ripterms
 			int tickDelay = 1;
 		};
 
+		class Nuker : public IModule
+		{
+		public:
+			//Nuker() { this->keyBind = 0x4E; };
+			void run() override;
+			void renderGUI() override;
+		private:
+			float blocksx = 2.0f;
+			float blocksxx = 2.0f;
+			float blocksy = 2.0f;
+			float blocksyy = 2.0f;
+			float blocksz = 2.0f;
+			float blockszz = 2.0f;
+			float delay = 1;
+		};
+
 		class FastPlace : public IModule
 		{
 		public:
@@ -370,7 +386,7 @@ namespace Ripterms
 		inline Category categories[] =
 		{
 			Category::create<AimAssist, Reach, LeftClicker, WTap, HitBoxes, BackTrack, NoMiss, BlockOnAttack>("Combat"),
-			Category::create<FastPlace, Blink, LegitScaffold, NoFall>("Player"),
+			Category::create<FastPlace, Blink, LegitScaffold, NoFall, Nuker>("Player"),
 			Category::create<Velocity, VelocityPacket, Sprint, Glide, VelocityFly, Speed>("Movement"),
 			Category::create<Xray, FullBright, ESP>("Render"),
 			Category::create<ClientBrandChanger, Test>("Whatever")
