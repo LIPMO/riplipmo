@@ -876,6 +876,20 @@ R"(
 			}
 		],
 		"methods": []
+	},
+)"
+R"(
+	"net/minecraft/network/play/client/C07PacketPlayerDigging": {
+		"obfuscated": "net/minecraft/network/play/client/C07PacketPlayerDigging",
+		"fields": [],
+		"methods": [
+			{
+				"name": "<init>",
+				"obfuscated": "<init>",
+				"signature": "(IIIII)V",
+				"static": false
+			}
+		]
 	}
 }
 )";
