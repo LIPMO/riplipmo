@@ -1,9 +1,6 @@
 ﻿# RiptermsGhost - paladium
 
-# Press "insert" on your keyboard to open the GUI
-
 ### BASED ON: https://github.com/Lefraudeur/RiptermsGhost/tree/master
-### Thanks to lefraudeur for the base!
 
 ### Included Example Features :
 - AimAssist
